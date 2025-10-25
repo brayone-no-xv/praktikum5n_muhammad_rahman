@@ -12,12 +12,12 @@
     <title>SB Admin 2 - Login</title>
 
     <!-- Custom fonts for this template-->
-    <link href="/sbadmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/sbadmin/startbootstrap-sb-admin-2-gh-pages/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
     <!-- Custom styles for this template-->
-    <link href="/sbadmin/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="/sbadmin/startbootstrap-sb-admin-2-gh-pages/css/sb-admin-2.min.css" rel="stylesheet">
 </head>
 <body class="bg-gradient-primary">
     <div class="container">
@@ -31,7 +31,7 @@
                             
                             <div class="col-lg-6 d-none d-lg-block bg-login-image">
                                 <br/>
-                                <img src="/sbadmin/logo.png" width="70%" alt="Logo">
+                                    <img src="/Assets/Images/Courier-opened-door.png" width="70%" alt="Courier standing at an open doorway holding a package, about to deliver it; residential entrance in daylight, conveying a welcoming and professional tone">
                             </div>
 
                             <div class="col-lg-6">
@@ -44,29 +44,12 @@
                                     <form class="user" action="/login" method="POST">                                        
                                         @csrf
 
-                                        {{-- show session / flash error --}}
-                                        @if(session('error'))
-                                            <div class="alert alert-danger">
-                                                {{ session('error') }}
-                                            </div>
-                                        @endif
-
-                                        {{-- username --}}
                                         <div class="form-group">
-                                            <input type="text" name="username" class="form-control form-control-user @error('username') is-invalid @enderror" value="{{ old('username') }}" required autofocus>
-                                            @error('username')
-                                                <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
+                                            <input type="text" name="username" class="form-control form-control-user">
                                         </div>
-
-                                        {{-- password --}}
                                         <div class="form-group">
-                                            <input type="password" name="password" class="form-control form-control-user @error('password') is-invalid @enderror" required>
-                                            @error('password')
-                                                <div class="invalid-feedback">{{ $message }}</div>
-                                            @enderror
+                                            <input type="password" name="password" class="form-control form-control-user">
                                         </div>
-
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
                                             Login
                                         </button>
@@ -83,14 +66,14 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="/sbadmin/vendor/jquery/jquery.min.js"></script>
-    <script src="/sbadmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/sbadmin/startbootstrap-sb-admin-2-gh-pages/vendor/jquery/jquery.min.js"></script>
+    <script src="/sbadmin/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="/sbadmin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/sbadmin/startbootstrap-sb-admin-2-gh-pages/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="/sbadmin/js/sb-admin-2.min.js"></script>
+    <script src="/sbadmin/startbootstrap-sb-admin-2-gh-pages/js/sb-admin-2.min.js"></script>
 
 </body>
 
