@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>INVENTARIS</title>
 
     <!-- Custom fonts for this template-->
     <link href="/sbadmin/startbootstrap-sb-admin-2-gh-pages/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,7 +35,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">INVENTARIS</div>
             </a>
 
             <!-- Divider -->
@@ -51,6 +51,11 @@
                 <a class="nav-link" href="/admin/barang">
                     <i class="fas fa-fw fa-list"></i>
                     <span>Data Barang</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/admin/laporan">
+                    <i class="fas fa-fw fa-file"></i>
+                    <span>Laporan</span></a>
             </li>
 
             <!-- Divider -->
